@@ -27,13 +27,20 @@ To run the City App using Docker Compose, follow these steps:
 The basic spring security has been added. The browser will prompt for login
 
 1. Two Users have been created in memory with following credentials
-  username: user
-  password: password
-  role: USER
+  
+      username: user
+  
+      password: password
+  
+      role: USER
 
-  username: admin
-  password: password
-  role: ADMIN
+      **************
+      
+      username: admin
+  
+      password: password
+  
+      role: ADMIN
   
 2. The city update access is given only for the admin user
 3. Since logout and session management are not added for now, please open the application in private(or incognito) mode. If you want to login with another user, please close the browser and re-open the private(or incognito) window again
