@@ -18,9 +18,11 @@ To run the City App using Docker Compose, follow these steps:
    ```bash
    git clone https://github.com/gt7711/kn.git
 
-2. cd kn
-3. docker-compose up
-4. http://localhost:8080
+2. ```bash
+   cd kn
+4. ```bash
+   docker-compose up
+6. Open browser in private window mode: http://localhost:8080
 
 ## Additional Notes
 
