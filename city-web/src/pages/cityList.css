@@ -1,0 +1,144 @@
+* {
+  box-sizing: border-box;
+}
+.city-list-container {
+  margin: 20px;
+  font-family: Arial, Helvetica, sans-serif;
+  padding-top: 40px;
+}
+.controls {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 20px;
+}
+
+.search-container {
+  display: flex;
+  align-items: center;
+}
+
+.search-box {
+  padding: 5px 10px;
+  border: none;
+  border-bottom: 2px solid #ccc;
+  margin-right: 10px;
+  font-size: 16px;
+  font-weight: bold;
+  color: #555;
+  width: 300px;
+}
+
+.search-box:focus {
+  outline: none;
+  border-bottom: 2px solid #007bff;
+}
+
+.search-button {
+  background-color: #007bff;
+  color: #fff;
+  padding: 10px;
+  border: none;
+  cursor: pointer;
+  font-size: 16px;
+  font-weight: bold;
+  border-radius: 5px;
+}
+
+.search-button:hover {
+  background-color: #0069d9;
+}
+
+.pagination-container {
+  display: flex;
+  align-items: center;
+}
+
+.cities-per-page-label {
+  font-size: 16px;
+  font-weight: bold;
+  color: #555;
+  margin-right: 10px;
+}
+
+.cities-per-page-select {
+  font-size: 16px;
+  font-weight: bold;
+  color: #555;
+  margin-right: 10px;
+  padding: 5px 10px;
+  border: none;
+  border-bottom: 2px solid #ccc;
+  cursor: pointer;
+  background-color: #fff;
+  border-radius: 5px;
+}
+
+.cities-per-page-select:focus {
+  outline: none;
+  border-bottom: 2px solid #007bff;
+}
+
+.pagination {
+  display: flex;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.pagination li {
+  margin-right: 5px;
+}
+
+.pagination button {
+  font-size: 16px;
+  font-weight: bold;
+  color: #555;
+  padding: 5px 10px;
+  border: none;
+  cursor: pointer;
+  background-color: #fff;
+  border-radius: 5px;
+}
+
+.pagination button:focus {
+  outline: none;
+}
+
+.pagination button:hover {
+  background-color: #ccc;
+}
+
+.pagination .active button {
+  background-color: #007bff;
+  color: #fff;
+}
+.pagination .inactive button {
+  cursor: not-allowed
+}
+.city-list {
+  margin: 0;
+  padding: 0;
+  display: grid;
+  grid-template-columns: auto auto auto auto;
+  padding: 10px;
+}
+  
+/* Mobile View */
+@media screen and (min-width:250px) and (max-width:890px) {        
+  .city-list{
+    grid-template-columns: auto;
+  }
+}
+/* Tablet View */
+@media screen and (min-width:891px) and (max-width:1300px) {
+  .city-list{
+    grid-template-columns: auto auto;
+  }
+}
+/* Laptop View */
+@media screen and (min-width:1301px) and (max-width:1700px) {
+  .city-list{
+    grid-template-columns: auto auto auto;
+  }
+}
