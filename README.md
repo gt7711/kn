@@ -48,4 +48,14 @@ The basic spring security has been added. The browser will prompt for login
 3. Since logout and session management are not added for now, please open the application in private(or incognito) mode. If you want to login with another user, please close the browser and re-open the private(or incognito) window again
 
 
+## Code Base Notes
 
+1. The front end is created using react.js
+
+   ```bash
+   cd city-web
+
+2. The back end is developed with spring boot
+
+   ```bash
+   cd city-service
